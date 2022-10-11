@@ -411,6 +411,14 @@ img {
   margin: 0 auto !important;
 }
 
+.sec-width .testimonial {
+  border-bottom: 5px solid #ec9646;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(0,0,0.5);
+  background-color: rgba(0,0,0, 0.4);
+}
+
 /* service */
 .services {
   margin: 40px 0;
@@ -437,19 +445,20 @@ img {
   background: var(--yellow);
   color: #fff;
 }
-@media (min-width: 992px) {
-  .services-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 30px;
-  }
-  .title h2 {
-    font-size: 10px !important;
-  }
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
 }
-@media (max-width: 500px) {
+.title h2 {
+  font-size: 30px;
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
   .title h2 {
-    font-size: 24px;
+    font-size: 1.1rem;
+    padding: 1rem;
   }
 }
 
@@ -625,7 +634,7 @@ img {
 }
 
 .container{
-   position: relative;   
+   position: relative;
    height: 600px;
    display:flex;
    justify-content: space-between;
